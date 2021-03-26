@@ -25,3 +25,4 @@ TEST_CASE("reports no error in case of current maintained as 0 ") {
   double currentReadings[] = {0.0, 0.0, 0.0, 0.0};
   int numOfCurReadings = sizeof(currentReadings) / sizeof(currentReadings[0]);
   REQUIRE(validateSOCreadings(currentReadings, numOfCurReadings,0.1) == 1);
+}
